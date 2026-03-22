@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proiect Oprea Andreea</title>
+    <link rel="stylesheet" href="4_1090_OPREA_Andreea.css">
+</head>
+<body>
+    
+
+    <div id="layout">
+        <div id = "sidebar">
+        <input type="file" id="fileInput" accept="image/*">
+        <h2>Butoane</h2>
+        
+        
+        
+            <button onclick="saveImage()">Salveaza</button>
+        
+            <button onclick="crop()">Crop</button>
+        
+            <button onclick="grayscale()">Grayscale</button>
+        
+            <br><input type="number" id="newWidth" placeholder="Latime">
+            <button onclick="resize()">Resize</button>
+        
+        
+        
+        
+            <br><input id="text" placeholder="Text">
+            <input type="color" id="color">
+            <input type="number" id="size" placeholder="font size">
+            <input type="number" id="posX" placeholder="X">
+            <input type="number" id="posY" placeholder="Y">
+            <button onclick="addText()">Adauga text</button>
+            <button onclick="clearSelection()">Sterge selectia</button>
+        
+    </div>
+    
+
+
+    <div id = "content">
+        <h1>Proiect Multimedia - Editor Fotografii</h1>
+        <h2>Histograma</h2>
+        <canvas id="canvas" ></canvas>
+        <canvas id="histograma" width="400" height="200"></canvas>
+    </div>
+    </div>
+    
+    
+    
+    
+    
+
+
+
+    <script src="4_1090_OPREA_Andreea.js"></script>
+</body>
+</html>
